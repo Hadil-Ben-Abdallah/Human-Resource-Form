@@ -1,4 +1,4 @@
-<h1>📝📋 Human Resource Form 📋📝</h1> 
+<h1 align="center">📝📋 Human Resource Form 📋📝</h1> 
 A simple form with HTML and CSS
 <br/>
 <br/>
