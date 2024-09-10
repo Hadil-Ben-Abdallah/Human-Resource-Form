@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Resource Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+  <h1>Resources humaines</h1>
+  <p>Tous les champs sont requis *</p>
+<form action="formulaire.php" method="post">
+  <div class="form">
+    <div class="label"><label for="Ministere">Ministère / Organisme</label></div>
+    <div class="in">
+      <i class="fa-solid fa-building-columns" style="color: #1b3747"></i>
+      <select name="ministere" id="Ministere">
+        <option value="00">Option 1</option>
+        <option value="01">Option 2</option>
+        <option value="02">Option 3</option>
+      </select>
+    </div>
+</div>
+<div class="form">
+  <div class="label"><label for="Cin">Cin</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-id-card" style="color: #1b3747"></i>
+    <input id="Cin" type="text" maxlength="8" name="cin"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Num-passport">Num passport (étranger)</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-passport" style="color: #1b3747"></i>
+    <input id="Num-passport" type="text" maxlength="20" name="num-passport"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="CNRPS">CNRPS</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-building" style="color: #1b3747"></i>
+    <input id="CNRPS" type="text" maxlength="10" name="cnrps"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Nom">Nom</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-user" style="color: #1b3747"></i>
+    <input id="Nom" type="text" maxlength="50" name="nom"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Prenom">Prénom</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-user" style="color: #1b3747"></i>
+    <input id="Prenom" type="text" maxlength="50" name="prenom"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Email">Email</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-envelope" style="color: #1b3747"></i>
+    <input id="Email" type="email" maxlength="50" name="email"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Date-de-naissance">Date de naissance</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-cake-candles" style="color: #1b3747"></i>
+    <input id="Date-de-naissance" type="date" maxlength="50" name="date-naissance"></div>
+</div>
+<div class="form">
+  <label for="">Genre</label>
+  <div class="genre">
+    <i class="fa-solid fa-venus-mars" style="color: #1b3747"></i>
+  </div>
+  <div class="masc">
+    <input type="radio" id="Masc" name="genre">
+    <label for="Masc">Masculin</label>
+  </div>
+  <div>
+    <input type="radio" id="Fem" name="genre">
+    <label for="Fem">Féminin</label>
+  </div>
+</div>
+<div class="form">
+  <div class="upload"><label for="photo" >Photo (Image JPG/PNG, Taille maximale: 1024 ko)</label></div>
+  <input class="upload" id="photo" type="file" name="photo">
+</div>
+<div class="form">
+  <div class="label"><label for="Fonction">Fonction administrative</label></div>
+  
+  <div class="in">
+    <i class="fa-solid fa-briefcase" style="color: #1b3747"></i>
+    <input id="Fonction" type="text" name="fonction"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Grade">Grade</label></div>
+  <div class="in">
+    <i class="fa-solid fa-turn-up" style="color: #1b3747"></i>
+    <select name="grade" id="Grade">
+      <option value="AS0001">Option 1</option>
+      <option value="ASC0001">Option 2 </option>
+      <option value="ASD0001">Option 3</option>
+      
+    </select>
+  </div>
+</div>
+<div class="form">
+  <div class="label"><label for="Specialite">Spécialité</label></div>
+  <div class="in">
+    <i class="fa-solid fa-code-branch" style="color: #1b3747"></i>
+    <input id="Specialite" type="text" name="specialite"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Diplome">Diplôme</label></div>
+  <div class="in">
+    <i class="fa-solid fa-graduation-cap" style="color: #1b3747"></i>
+    <input id="Diplome" type="text" name="diplome"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Date-du-dernier-diplome">Date du dernier diplôme</label></div>
+  <div class="in">
+    <i class="fa-solid fa-calendar-days" style="color: #1b3747"></i>
+    <input id="Date-du-dernier-diplome" type="date" name="date-diplome"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="H-index">H-index (Scopus)</label></div>
+  <div class="in">
+    <i class="fa-solid fa-address-book" style="color: #1b3747"></i>
+    <input id="H-index" type="number" name="index"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Identification">Identification ORCID</label></div>
+  <div class="in">
+    <i class="fa-solid fa-fingerprint" style="color: #1b3747"></i>
+    <input id="Identification" type="text" name="identification"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Tel-fixe">Tél Fixe</label></div>
+  <div class="in">
+    <i class="fa-solid fa-tty" style="color: #1b3747"></i>
+    <input id="Tel-fixe" type="tel" name="tel-fixe"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Tel-mobile">Tél Mobile</label></div>
+  <div class="in">
+    <i class="fa-solid fa-mobile" style="color: #1b3747"></i>
+    <input id="Tel-mobile" type="tel" name="tel-mobile"></div>
+</div>
+<div class="form">
+  <div class="label"><label for="Fax">Fax</label></div>
+  <div class="in">
+    <i class="fa-solid fa-fax " style="color: #1b3747"></i>
+    <input id="Fax" type="tel" name="fax"></div>
+</div>
+<button type="submit" name="valider">Valider<i class="fa-solid fa-paper-plane"></i></button>
+</form>
+</div>
+</body>
+</html>
